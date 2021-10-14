@@ -1,0 +1,16 @@
+name: Scene Cover Saver
+description: Save a local copy of a scene's cover image when added/updated.
+url:
+version: 0.1
+exec:
+  - python
+  - "{pluginDir}/cover_saver.py"
+interface: raw
+hooks:
+  - name: 'Cover Saver'
+    description: Save local copy of a cover image on add/update.
+    defaultArgs:
+      overwrite: False # always overwrite the image on update (this is heavyhanded).
+      customName: # defaults to title of movie file but can be configured to "cover", "poster".
+    triggeredBy:
+      - Scene.Update.Post
