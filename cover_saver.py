@@ -1,10 +1,8 @@
 import base64
 import json
-from mimetypes import guess_extension
 import os
 import requests
 import sys
-import urllib
 import urlparse
 
 FRAGMENT = json.loads(sys.stdin.read())
