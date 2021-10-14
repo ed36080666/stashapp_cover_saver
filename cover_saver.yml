@@ -10,7 +10,7 @@ hooks:
   - name: 'Cover Saver'
     description: Save local copy of a cover image on add/update.
     defaultArgs:
-      overwrite: False # always overwrite the image on update (this is heavyhanded).
-      customName: # defaults to title of movie file but can be configured to "cover", "poster".
+      overwrite: False # TODO implement a config flag to overwrite local images.
+      customName: # TODO implement config value for customizing local image naming (defaults to scene name but maybe something like "poster" would be desired?)
     triggeredBy:
       - Scene.Update.Post
